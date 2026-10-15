@@ -869,7 +869,7 @@ Banner /etc/ssh/banner
 Validez la configuration avant de recharger le service Debian :
 \begin{bashcode}
 sshd -t
-service ssh reload
+systemctl reload ssh
 \end{bashcode}
 Fermez la session Guacamole, ouvrez-en une nouvelle et vérifiez que l'avertissement
 apparaît avant l'authentification.
